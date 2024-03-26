@@ -5,7 +5,7 @@ import Card from '../components/Card.astro'
 import profileImg from '../assets/js2fzh_icon.jpg'
 ---
 
-<Layout title="JS2FZH" description="JS2FZH">
+<Layout title="JS2FZH" description="JS2FZH" >
   <Card>
     <div class="text-center">
       <Picture
@@ -14,15 +14,21 @@ import profileImg from '../assets/js2fzh_icon.jpg'
           formats={['avif', 'webp']}
           loading="eager"
           class="profile-img"
-          />
-          <div class="name">JS2FZH</div>
+      />
+      <div class="name">JS2FZH</div>
     </div>
   </Card>
 </Layout>
 
 <style>
   .text-center {
+    background-image: url(../assets/js2fzh_header.jpg);
+    background-color:rgba(255,255,255,0.3);
+    background-blend-mode:lighten;
+    background-size: cover;
+    background-position: center;
     text-align: center;
+    box-shadow: inset 0 0 5px 5px #e0f2fe;
   }
   .profile-img {
     width: 25vw;
@@ -36,6 +42,7 @@ import profileImg from '../assets/js2fzh_icon.jpg'
     margin: 1rem auto 0 auto;
     font-size: 1.33rem;
     width: fit-content;
+    color: #ffffff;
   }
   .name:after {
     content: '';
